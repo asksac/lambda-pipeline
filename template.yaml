@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS SAM template to deploy a couple of Lambda functions
+
+Resources:
+  HelloFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: hello.handler
+      Runtime: nodejs12.x
+      CodeUri: lambdas/hello/
+  GreetingsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: greetings.handler
+      Runtime: nodejs12.x
+      CodeUri: lambdas/greetings/

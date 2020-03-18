@@ -1,0 +1,15 @@
+{
+  "name": "lambda-greetings",
+  "version": "1.0.0",
+  "description": "Greetings Lambda function",
+  "main": "greetings.js",
+  "scripts": {
+    "test": "node greetings.js"
+  },
+  "author": "Sachin Hamirwasia",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
