@@ -4,7 +4,8 @@
   "description": "Dependencies to run Gulp on this project",
   "main": "gulpfile.js",
   "scripts": {
-    "install": "gulp gulpfile.js"
+    "install": "gulp gulpfile.js", 
+    "test": "sam local invoke HelloFunction"
   },
   "author": "Sachin Hamirwasia",
   "license": "ISC",
