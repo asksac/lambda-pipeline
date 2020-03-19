@@ -4,17 +4,21 @@
   "description": "Dependencies to run Gulp on this project",
   "main": "gulpfile.js",
   "scripts": {
-    "install": "gulp gulpfile.js", 
-    "test": "sam local invoke HelloFunction"
+    "build": "gulp",
+    "test": "mocha --timeout 10000 tests/index.js",
+    "sam": "sam local start-lambda --log-file ./sam-local.log &", 
+    "sam-stop": "pkill -f 'sam local'"
   },
   "author": "Sachin Hamirwasia",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-install": "^1.1.0",
     "gulp-zip": "^5.0.1",
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "mocha": "^7.1.1",
+    "chai": "4.2.0",
+    "aws-sdk": "^2.642.0"
   }
 }
