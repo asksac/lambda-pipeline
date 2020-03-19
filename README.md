@@ -1,4 +1,4 @@
-# A AWS Lambda Develop, Test and Depoy Pipeline
+# An AWS Lambda Develop, Test and Depoy Pipeline
 
 This project shows how to use tools such as AWS SAM, Gulp and Terraform to test and a couple 
 of AWS Lambda functions. It also serves to demonstrate how one Lambda service can invoke another 
