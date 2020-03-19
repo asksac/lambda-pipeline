@@ -1,4 +1,4 @@
-# An AWS Lambda Develop, Test and Depoy Pipeline
+# An Example AWS Lambda Develop, Test and Depoy Pipeline
 
 This project shows how to use tools such as AWS SAM, Gulp and Terraform to test and a couple 
 of AWS Lambda functions. It also serves to demonstrate how one Lambda service can invoke another 
@@ -21,6 +21,18 @@ an open-source framework for building and testing serverless applications
 ### Deployment tools used: 
 * [Terraform](https://www.terraform.io) - An open source infrastructure as code (IaC) tool
 
+## Running the example Lambda functions
+
+First, ensure you have AWS CLI and AWS SAM CLI tools installed on your computer or virtual machine. 
+See steps below on how to install AWS SAM CLI tool for MacOS. 
+
+Next, ensure you have Node.js and Gulp installed. Verify installation by running `node --version` 
+and `gulp --version` from a shell terminal. 
+
+Finally, you are ready to launch the tests locally. Run: 
+1. Launch `sam local` by executing `npm run-script sam`
+2. Run tests by executing `npm test`
+3. Stop `sam local` runtime when done, by running `npm run-script sam-stop`
 
 ## Installing AWS SAM CLI
 Source: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-mac.html
@@ -40,5 +52,3 @@ Verify the installation:
 ```
 sam --version
 ```
-
-# Initialize SAM project
