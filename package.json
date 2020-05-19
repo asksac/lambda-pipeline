@@ -6,19 +6,19 @@
   "scripts": {
     "build": "gulp",
     "test": "mocha --timeout 10000 tests/index.js",
-    "sam": "sam local start-lambda --log-file ./sam-local.log &", 
+    "sam": "sam local start-lambda --log-file ./sam-local.log &",
     "sam-stop": "pkill -f 'sam local'"
   },
   "author": "Sachin Hamirwasia",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "aws-sdk": "^2.680.0",
+    "chai": "4.2.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-install": "^1.1.0",
     "gulp-zip": "^5.0.1",
-    "del": "^5.1.0",
-    "mocha": "^7.1.1",
-    "chai": "4.2.0",
-    "aws-sdk": "^2.642.0"
+    "mocha": "^7.1.2"
   }
 }
